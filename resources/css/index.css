@@ -1,0 +1,195 @@
+/* Resetování několika výchozích hodnot */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: Nunito Sans;
+font-size: 18px;
+}
+
+
+nav {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 64px;
+    padding: 0px 24px;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+
+h1 {
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+h2 {
+    line-height: 1.2;
+    font-weight: 800;
+
+}
+
+h3 {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+    line-height: 140%;
+    width: 95%;
+}
+
+
+.flex-container {
+
+    display: flex;
+
+}
+
+.flex-container.main {
+    padding: 32px 24px;
+}
+
+img.image-full {
+    width: 100%;
+    height: auto;
+
+}
+
+img.image-small {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+
+}
+
+.image-big {
+    width: 100%;
+    height: auto;
+
+}
+
+
+.container-small {
+    width: 60%;
+    align-self: center;
+}
+
+.left-container {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.right-container {
+    width: 40%;
+    padding: 32px 0px;
+}
+
+
+.grey.flex-container {
+    background-color: rgb(214, 214, 214);
+    align-items: center;
+    
+}
+
+.white-container {
+    background-color: white;
+    flex: 1 1 auto;
+
+
+
+
+}
+
+.space-bit {
+    padding: 16px;
+
+}
+
+
+
+.flex-container.column {
+    flex-direction: column;
+}
+
+
+
+.text {
+    max-width: 300px;
+} 
+
+
+.left-border {
+    border-left: 1px solid rgb(214, 214, 214);
+
+}
+
+button.blue {
+    color: rgb(0, 51, 255);
+    background-color: transparent;
+    border: none;
+}
+
+.flex-container.space {
+    padding: 32px 72px;
+}
+
+video {
+    margin-bottom: 24px;
+}
+
+
+.margin32 {
+    margin-bottom: 32px;
+}
+
+
+.margin24 {
+    margin-bottom: 24px;
+}
+
+.margin8 {
+    margin-bottom: 8px;
+}
+
+.box {
+    column-gap: 24px;
+}
+
+
+.column.center {
+    align-items: center;
+}
+
+footer {
+    border-top: 1px solid rgb(214, 214, 214);
+    padding-top: 16px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* CSS pravidla pro obrazovky menší než 600px */
+    ul {
+        display: none;
+    }
+  }
