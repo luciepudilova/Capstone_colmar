@@ -148,6 +148,11 @@ button.blue {
     color: rgb(0, 51, 255);
     background-color: transparent;
     border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+
+
 }
 
 .flex-container.space {
@@ -186,10 +191,123 @@ footer {
     padding-top: 16px;
 }
 
+button {
+    color: white;
+    background-color: grey;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-top: 24px;
+    
+}
 
-@media only screen and (max-width: 600px) {
-    /* CSS pravidla pro obrazovky menší než 600px */
-    ul {
+@media only screen and (min-width: 700px) {
+    .none-desktop {
         display: none;
     }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    /* CSS pravidla pro obrazovky menší než 600px */
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    
+    nav {
+        justify-content: space-between;
+    }
+
+    li {
+        margin: 0px 25px;
+    }
+
+
+
+    .left-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-container {
+        padding: 32px 16px;
+        width: 100%;
+    }
+
+    .flex-container {
+        display: inline-block;
+        width: 100%;
+
+    }
+
+    .flex-container.space {
+        padding: 32px 16px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    
+    .container-small {
+        width: 100%;
+        padding: 16px;
+        display: inline-block;
+
+
+    }
+
+    img.image-small {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .flex-container.box {
+        width: 100%;
+        margin-bottom: 0;
+
+    }
+
+    .white-container {
+        margin-bottom: 8px;
+        padding-top: 6px;
+        background-color: rgb(214, 214, 214);
+    }
+
+    .flex-container.grey.column.space {
+        background-color: white;
+        border-top: 1px solid rgb(214, 214, 214);
+        border-bottom: 1px solid rgb(214, 214, 214);
+
+    }
+
+    .left-border {
+        border-left: none;
+    }
+
+    h2 {
+        text-align: center; 
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .margin16 {
+        margin-bottom: 16px;
+    }
+
+
+
+    
   }
